@@ -27,7 +27,7 @@ public class RunBase {
                 break;
             case "chrome-ci":
                 ChromeOptions option = new ChromeOptions();
-                option.addArguments("--headless");
+                option.addArguments("--headless", "--no-sandbox");
                 driver = new ChromeDriver(option);
                 break;
             case "firefox":
