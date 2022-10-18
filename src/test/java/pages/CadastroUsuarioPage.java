@@ -13,7 +13,7 @@ public class CadastroUsuarioPage extends RunCucumber {
     private By campoSenha = By.id("password");
     private By botaoFazerCadastro= By.id("btnRegister");
 
-    // ações / funções / métodos
+    // Ações / Funções / Métodos
     public void preencheNome(String nome){
          fillField(campoNome, nome);
     }
