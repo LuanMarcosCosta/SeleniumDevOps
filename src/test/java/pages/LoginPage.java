@@ -17,7 +17,6 @@ public class LoginPage extends RunCucumber {
 
     // ações / funções / métodos
     public void acessarAplicao() {
-        getDriver().manage().window().maximize();
         String browser = System.getProperty("browser");
         getDriver(browser).get(URL);
     }
