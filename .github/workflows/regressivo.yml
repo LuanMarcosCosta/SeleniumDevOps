@@ -45,4 +45,4 @@ jobs:
 
       - name: Enviar Notificação Para Slack
       - uses: fateyan/action-discord-notifier@v1
-          webhook: https://discordapp.com/api/webhooks/UgKbeqG7aTPrN9o8aCuzGKVMiukeYcE5lldlzpxFwyIPNUGB5HHNnZsLLDUHtEwCpF0n/github
+          webhook: https://discordapp.com/api/webhooks/DISCORD_WEBHOOK/secret
