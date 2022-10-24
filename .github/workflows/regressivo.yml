@@ -43,11 +43,14 @@ jobs:
           name: report-execution
           path: "**/formated-report/"
 
-## Mensagem enviada para o Discord, com as situações de: teste Sucesso, teste Falhou e teste Cancelado
+## Mensagem enviada para o Discord, com as situações de:
+## Teste Sucesso, Teste Falhou e Teste Cancelado
       - name: Test Success
         uses: rjstone/discord-webhook-notify@v1
         if: success()
         with:
+          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+          username: Luãn Costa
           severity: info
           details: Test Succeeded!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
@@ -56,8 +59,6 @@ jobs:
         if: failure()
         with:
           severity: error
-          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
-          username: Luãn Costa
           details: Test Failed!
           footer: This is a footer.
           text: O teste passou com sucesso!
