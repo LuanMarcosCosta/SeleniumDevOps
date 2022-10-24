@@ -42,9 +42,3 @@ jobs:
         with:
           name: report-execution
           path: "**/formated-report/"
-
-      - name: Enviar Notificação Para Slack
-      - uses: fateyan/action-discord-notifier@v1
-        with:
-          message-title: New Commits Pushed
-          webhook: https://discordapp.com/api/webhooks/DISCORD_WEBHOOK/secret

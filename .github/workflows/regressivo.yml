@@ -44,5 +44,5 @@ jobs:
           path: "**/formated-report/"
 
       - name: Enviar Notificação Para Slack
-      - uses: fateyan/action-discord-notifier@v1
-          webhook: https://discordapp.com/api/webhooks/DISCORD_WEBHOOK/secret
+        uses: fateyan/action-discord-notifier@v1
+          webhook: https://discordapp.com/api/webhooks/DISCORD_WEBHOOK
