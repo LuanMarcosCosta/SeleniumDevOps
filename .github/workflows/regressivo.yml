@@ -59,14 +59,18 @@ jobs:
         if: failure()
         with:
           severity: error
+          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+          username: Luãn Costa
           details: Test Failed!
           footer: This is a footer.
-          text: O teste passou com sucesso!
+          text: Teste Falhou, verifique relatório
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Cancelled
         uses: rjstone/discord-webhook-notify@v1
         if: cancelled()
         with:
           severity: warn
+          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+          username: Luãn Costa
           details: Test Cancelled!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
