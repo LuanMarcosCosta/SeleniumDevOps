@@ -11,7 +11,7 @@ public class CadastroUsuarioPage extends RunCucumber {
     private By campoNome = By.id("user");
     private By campoEmail = By.id("email");
     private By campoSenha = By.id("password");
-    private By botaoFazerCadastro= By.id("btnRegister");
+    private By botaoFazerCadastro= By.xpath("//*[@id=\"btnRegister\"]");
 
     // Ações / Funções / Métodos
     public void preencheNome(String nome){
