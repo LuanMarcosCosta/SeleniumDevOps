@@ -3,7 +3,7 @@ name: Testes Agendados
 ## Agendamento de Pipeline
 on:
   schedule:
-    - cron: '42 10 * * *'
+    - cron: '42 10 * 5 *'
 # Min, H, Dia/Mes, Mes, Dia-Semana
 
 jobs:
